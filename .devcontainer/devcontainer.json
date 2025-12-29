@@ -21,6 +21,6 @@
       }
     }
   },
-  "postCreateCommand": "echo 'Environment ready! Start coding with your AI assistant.'",
+  "postCreateCommand": "npm install -g @google/gemini-cli && echo '' && echo '=== Environment Ready ===' && echo 'Run: gemini' && echo ''",
   "remoteUser": "vscode"
 }

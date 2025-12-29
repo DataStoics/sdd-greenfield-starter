@@ -5,10 +5,7 @@
     "ghcr.io/devcontainers/features/node:1": {
       "version": "20"
     },
-    "ghcr.io/devcontainers/features/github-cli:1": {},
-    "ghcr.io/devcontainers/features/go:1": {
-      "version": "latest"
-    }
+    "ghcr.io/devcontainers/features/github-cli:1": {}
   },
   "customizations": {
     "vscode": {
@@ -24,6 +21,6 @@
       }
     }
   },
-  "postCreateCommand": "npm install -g @google/gemini-cli && go install github.com/speckai/speckit/cmd/speckit@latest && echo '' && echo '=== Environment Ready ===' && echo 'Installed: gemini, speckit' && echo 'Run: gemini (for AI assistant)' && echo 'Run: speckit init . (to initialize SDD project)' && echo ''",
+  "postCreateCommand": "pip install uv && uv tool install specify-cli --from git+https://github.com/github/spec-kit.git && npm install -g @google/gemini-cli && echo '' && echo '=== Environment Ready ===' && echo 'Installed: gemini, specify' && echo 'Run: gemini (for AI assistant)' && echo 'Run: specify init . (to initialize SDD project)' && echo ''",
   "remoteUser": "vscode"
 }

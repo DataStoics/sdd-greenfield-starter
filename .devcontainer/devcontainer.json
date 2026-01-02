@@ -5,7 +5,8 @@
     "ghcr.io/devcontainers/features/node:1": {
       "version": "20"
     },
-    "ghcr.io/devcontainers/features/github-cli:1": {}
+    "ghcr.io/devcontainers/features/github-cli:1": {},
+    "ghcr.io/devcontainers/features/docker-in-docker:2": {}
   },
   "customizations": {
     "vscode": {
@@ -21,6 +22,12 @@
       }
     }
   },
-  "postCreateCommand": "pip install uv && uv tool install specify-cli --from git+https://github.com/github/spec-kit.git && npm install -g @google/gemini-cli && echo '' && echo '=== Environment Ready ===' && echo 'Installed: gemini, specify' && echo 'Run: gemini (for AI assistant)' && echo 'Run: specify init . (to initialize SDD project)' && echo ''",
+  "postCreateCommand": "pip install uv pytest pytest-asyncio httpx pytest-cov && uv tool install specify-cli --from git+https://github.com/github/spec-kit.git && npm install -g @google/gemini-cli && echo '' && echo '=== Environment Ready ===' && echo 'Installed: gemini, specify, pytest' && echo 'Run: gemini (for AI assistant)' && echo 'Run: specify init . (to initialize SDD project)' && echo ''",
+  "forwardPorts": [8000, 6379, 5173],
+  "portsAttributes": {
+    "8000": {"label": "Backend API"},
+    "6379": {"label": "Redis"},
+    "5173": {"label": "Frontend Dev"}
+  },
   "remoteUser": "vscode"
 }

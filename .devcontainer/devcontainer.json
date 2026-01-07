@@ -1,5 +1,5 @@
 {
-  "name": "SDD Greenfield Starter",
+  "name": "Spec-Driven Development (SDD) Starter",
   "image": "mcr.microsoft.com/devcontainers/python:3.12",
   "features": {
     "ghcr.io/devcontainers/features/node:1": {
@@ -23,11 +23,21 @@
     }
   },
   "postCreateCommand": "bash .devcontainer/setup.sh",
-  "forwardPorts": [8000, 6379, 5173],
+  "forwardPorts": [
+    8000,
+    6379,
+    5173
+  ],
   "portsAttributes": {
-    "8000": {"label": "Backend API"},
-    "6379": {"label": "Redis"},
-    "5173": {"label": "Frontend Dev"}
+    "8000": {
+      "label": "Backend API"
+    },
+    "6379": {
+      "label": "Redis"
+    },
+    "5173": {
+      "label": "Frontend Dev"
+    }
   },
   "remoteUser": "vscode"
 }

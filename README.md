@@ -25,6 +25,9 @@ This course works with any of these AI coding agents:
 | Gemini CLI | Free | `npm install -g @google/gemini-cli && gemini` |
 | Claude Code | $20/mo | [Install guide](https://docs.anthropic.com/claude-code) |
 
+## Instructions
+Follow the step-by-step instructions in the [SDD Course Guide - Part 1](https://datastoics.github.io/sdd-course-guide/part1/).
+
 ## Course Materials
 
 *Part of the [Spec-Driven Development](https://github.com/DataStoics/sdd-course-guide) course series by [DataStoics](https://github.com/DataStoics)*

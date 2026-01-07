@@ -1,6 +1,6 @@
-# SDD Greenfield Starter
+# Spec-Driven Development (SDD) Greenfield Starter
 
-Starter environment for the **Spec-Driven Development Foundations** course.
+The official starter environment for the **Spec-Driven Development Foundations** course. This workspace is optimized for building software using executable specifications (SDD) and AI-assisted workflows.
 
 ## Quick Start
 
@@ -21,13 +21,13 @@ This course works with any of these AI coding agents:
 
 | Tool | Cost | Setup |
 |------|------|-------|
-| **Gemini CLI** (recommended) | Free | `npm install -g @google/gemini-cli && gemini` |
-| GitHub Copilot | $10/mo or free for students | Pre-installed extension |
+| **GitHub Copilot** (recommended) | Free for students / $10/mo | Pre-installed extension |
+| Gemini CLI | Free | `npm install -g @google/gemini-cli && gemini` |
 | Claude Code | $20/mo | [Install guide](https://docs.anthropic.com/claude-code) |
 
 ## Course Materials
 
-Follow along at: [datastoics.github.io/sdd-course-guide](https://datastoics.github.io/sdd-course-guide)
+*Part of the [Spec-Driven Development](https://github.com/DataStoics/sdd-course-guide) course series by [DataStoics](https://github.com/DataStoics)*
 
 ## Publishing Your Work
 
@@ -38,4 +38,4 @@ When you're ready to save your work:
 
 ---
 
-*Part of the [Spec-Driven Development](https://github.com/DataStoics) course series by DataStoics*
+

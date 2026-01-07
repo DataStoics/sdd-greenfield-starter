@@ -1,10 +1,9 @@
 {
   "name": "Spec-Driven Development (SDD) Starter",
-  "image": "mcr.microsoft.com/devcontainers/python:3.12",
+  "build": {
+    "dockerfile": "Dockerfile"
+  },
   "features": {
-    "ghcr.io/devcontainers/features/node:1": {
-      "version": "20"
-    },
     "ghcr.io/devcontainers/features/github-cli:1": {}
   },
   "customizations": {
@@ -21,7 +20,6 @@
       }
     }
   },
-  "postCreateCommand": "bash .devcontainer/setup.sh",
   "forwardPorts": [
     8000,
     6379,
